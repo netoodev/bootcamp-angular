@@ -14,10 +14,25 @@
 
 // console.log(quadrado(10) + quadrado(10));
 
-function incrementarJuros(valor, percentualJuros) {
-    const valorDeAcrescimo = (percentualJuros / 100) * valor;
+// EXEMPLO DE FUNÇÃO 
 
-    return valor + valorDeAcrescimo
+// function incrementarJuros(valor, percentualJuros) {
+//     const valorDeAcrescimo = (percentualJuros / 100) * valor;
+
+//     return valor + valorDeAcrescimo
+// }
+
+// console.log(incrementarJuros(100, 25));
+
+function calcularJuros() {
+    
 }
 
-console.log(incrementarJuros(100, 25));
+
+function main() {
+    console.log('Programa principal');
+    calcularJuros();
+    
+}
+
+main();
