@@ -1,4 +1,8 @@
-const numero = 653;
+const numero = 0;
 const numeroPar = (numero % 2) === 0;
 
-console.log(numeroPar);
+if (numeroPar) {
+    console.log(`O número ${numero} é par!`);
+} else {
+    console.log(`O número ${numero} é Ímpar!`);
+}
