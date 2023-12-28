@@ -6,4 +6,5 @@ const pessoa = {
     }
 };
 
-pessoa.descrever();
+
+console.log(pessoa['nome']);
