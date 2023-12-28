@@ -14,8 +14,17 @@ class Pessoa {
     }
 }
 
-const neto = new Pessoa('José Neto', 19);
-const joao = new Pessoa('João Filho', 18);
+function compararPessoas(p1, p2) {
+    if (p1.idade > p2.idade) {
+        console.log(`${p1.nome} é mais velho(a) que ${p2.nome}`);
+    } else if (p2.idade > p1.idade) {
+        console.log(`${p2.nome} é mais velho(a) que ${p1.nome}`);
+    } else {
+        console.log(`${p1.nome} e ${p2.nome} possuem a mesma idade`);
+    }
+}
 
-console.log(neto);
-console.log(joao);
+const neto = new Pessoa('Neto', 19); 
+const joao = new Pessoa('João', 19); 
+
+compararPessoas(joao, neto);
