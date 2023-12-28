@@ -1,10 +1,10 @@
 const neto = {
     nome: 'José S N Neto',
     idade: 19,
-    altura: 180,
-    peso: 70.3
 };
 
-console.log(neto.nome);
-console.log(neto.idade);
+neto.altura = 180;
+
+delete neto.nome;
+
 console.log(neto);
