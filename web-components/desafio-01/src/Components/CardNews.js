@@ -45,7 +45,56 @@ class Cardnews extends HTMLElement {
     }
 
     styles(){
+        const style = document.createElement("style");
 
+        style.textContent = `
+            .card {
+                width: 80%;
+                background-color: #fff;
+                padding: 10px;
+                margin: 20px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-radius: 10px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+            
+            .card__left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 10px;
+            }
+            
+            .card__left > span {
+                font-weight: 400;
+            }
+            
+            .card__left > a {
+                margin-top: 15px;
+                font-size: 25px;
+                font-weight: bold;
+                color: #000;
+                text-decoration: none;
+            }
+            
+            .card__left > p {
+                color: rgb(70, 70, 70);
+            }
+            
+            .card__right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .card__right img {
+                max-width: 300px;
+            }
+        `;
+
+        return style;
     }
 }
 
