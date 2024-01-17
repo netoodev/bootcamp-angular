@@ -15,8 +15,13 @@ class Cardnews extends HTMLElement {
         cardLeft.setAttribute("class", "card__left");
 
         const author = document.createElement("span");
+        author.textContent = "By " + (this.getAttribute("author") || "Anonymous");
+
         const linkTitle = document.createElement("a");
+        linkTitle.textContent = this.getAttribute("title");
+
         const newsContent = document.createElement("p");
+        newsContent.textContent = this.getAttribute("content");
 
         const cardRight = document.createElement("div");
         cardRight.setAttribute("class", "card__right");
