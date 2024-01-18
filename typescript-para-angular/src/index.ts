@@ -52,3 +52,8 @@ let infos:(string | number)[] = ["Neto", 19];
 //Tuplas
 
 let boleto:[string, number, number] = ["Água conta", 199.90, 242356744623]
+
+//Datas
+
+let aniversario:Date = new Date("2004-11-17 10:43")
+console.log(aniversario.toString());
