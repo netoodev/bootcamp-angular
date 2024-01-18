@@ -74,6 +74,14 @@ function addToHello(name:string):string {
 let hello:string = addToHello("Neto");
 // console.log(hello);
 
+//Funções Multi Tipos
+
 function callToPhone(phone:string | number){
     return phone;
+}
+
+//Funções Async
+
+async function getDatabase(id:number):Promise<string> {
+    return "Neto";
 }
