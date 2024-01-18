@@ -18,3 +18,26 @@ let indefinido:undefined = undefined;
 
 let retorno:void;
 let retornoView:any = "Qualquer coisa";
+
+//Objeto - Sem Previsibilidade:
+
+let produto:object = {
+    id: 1,
+    nome: "Kit Copo",
+    preco: 54.90,
+    descricao: "Pra a amizade continuar"
+};
+
+//Objeto Tipado - Com Previsibilidade:
+
+type ProdutoLoja = {
+    nome:string;
+    preco:number;
+    unidades:number;
+}
+
+let meuProduto:ProdutoLoja = {
+    nome: "Forninho Elétrico",
+    preco: 250.00,
+    unidades: 8
+};
