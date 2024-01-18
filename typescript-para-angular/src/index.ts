@@ -1,13 +1,20 @@
-type heroi = {
-    nome: string;
-    vulgo: string;
-};
+//Tipos Primitivos:
 
-function printaObjeto(pessoa: heroi) {
-    console.log(pessoa);
-}
+let ligado:boolean = false;
+let nome:string = "Neto";
+let idade:number = 19;
+let altura:number = 1.80;
 
-printaObjeto({
-    nome: "Tony Stark",
-    vulgo: "Batman"
-})
+//Tipos Especiais:
+
+//null e undefined:
+
+let nulo:null = null;
+let indefinido:undefined = undefined;
+
+//Tipos Abrangentes:
+
+//any e void:
+
+let retorno:void;
+let retornoView:any = "Qualquer coisa";
