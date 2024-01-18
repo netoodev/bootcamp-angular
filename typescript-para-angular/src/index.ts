@@ -47,3 +47,4 @@ let meuProduto:ProdutoLoja = {
 let dados:string[] = ["Neto", "Helô", "Manoel"];
 let dados2:Array<string> = ["Neto", "Helô", "Manoel"];
 
+let infos:(string | number)[] = ["Neto", 19];
