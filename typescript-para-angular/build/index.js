@@ -23,4 +23,13 @@ let dados2 = ["Neto", "Helô", "Manoel"];
 let infos = ["Neto", 19];
 let boleto = ["Água conta", 199.90, 242356744623];
 let aniversario = new Date("2004-11-17 10:43");
-console.log(aniversario.toString());
+function addNumber(x, y) {
+    return x + y;
+}
+let soma = addNumber(4, 7);
+console.log(soma);
+function addToHello(name) {
+    return `Hello ${name}`;
+}
+let ola = addToHello("Neto");
+console.log(ola);

@@ -56,4 +56,20 @@ let boleto:[string, number, number] = ["Água conta", 199.90, 242356744623]
 //Datas
 
 let aniversario:Date = new Date("2004-11-17 10:43")
-console.log(aniversario.toString());
+// console.log(aniversario.toString());
+
+//Funcões
+
+function addNumber(x:number, y:number):number {
+    return x + y;
+}
+
+let soma:number = addNumber(4, 7);
+console.log(soma);
+
+function addToHello(name:string):string {
+    return `Hello ${name}`;
+}
+
+let hello:string = addToHello("Neto");
+console.log(hello);
