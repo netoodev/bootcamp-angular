@@ -65,11 +65,15 @@ function addNumber(x:number, y:number):number {
 }
 
 let soma:number = addNumber(4, 7);
-console.log(soma);
+// console.log(soma);
 
 function addToHello(name:string):string {
     return `Hello ${name}`;
 }
 
 let hello:string = addToHello("Neto");
-console.log(hello);
+// console.log(hello);
+
+function callToPhone(phone:string | number){
+    return phone;
+}
