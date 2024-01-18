@@ -48,3 +48,7 @@ let dados:string[] = ["Neto", "Helô", "Manoel"];
 let dados2:Array<string> = ["Neto", "Helô", "Manoel"];
 
 let infos:(string | number)[] = ["Neto", 19];
+
+//Tuplas
+
+let boleto:[string, number, number] = ["Água conta", 199.90, 242356744623]
