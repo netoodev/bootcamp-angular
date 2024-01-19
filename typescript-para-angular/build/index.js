@@ -60,8 +60,7 @@ class Robô {
 }
 const walle = new Robô(1, "Wall-E");
 class Character {
-    constructor(game, name, strength, skill) {
-        this.game = game;
+    constructor(name, strength, skill) {
         this.name = name;
         this.strength = strength;
         this.skill = skill;
@@ -72,5 +71,18 @@ class Character {
         console.log(`Your current strength: ${this.strength}`);
     }
 }
-const link = new Character("Zelda", "Link", 85, ["Magic", "Sword Fighting"]);
-link.attack(55, 0);
+class Magician extends Character {
+    constructor(name, strength, skill, magicPoints) {
+        super(name, strength, skill);
+        this.magicPoints = magicPoints;
+    }
+}
+const p1 = new Character("Ozborn", 85, ["Super-Smash", "Club Attack", "Deafening Shout"]);
+const p2 = new Magician("Ganfold", 56, ["Poisoning Spell", "Master Attack", "Magic Field"], 100);
+function concatArray(...itens) {
+    return new Array().concat(...itens);
+}
+const numArray = concatArray([1, 5], [3]);
+const stgArray = concatArray(["Neto, Percy"], ["Annabeth", "Grover"]);
+console.log(numArray);
+console.log(stgArray);

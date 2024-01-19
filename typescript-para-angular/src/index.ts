@@ -163,3 +163,16 @@ class Magician extends Character {
 const p1 = new Character("Ozborn", 85, ["Super-Smash", "Club Attack", "Deafening Shout"]);
 
 const p2 = new Magician("Ganfold", 56, ["Poisoning Spell", "Master Attack", "Magic Field"], 100);
+
+
+//Generics
+
+function concatArray(...itens: any[]): any[] {
+    return new Array().concat(...itens);
+}
+
+const numArray = concatArray([1, 5], [3]);
+const stgArray = concatArray(["Neto, Percy"], ["Annabeth", "Grover"])
+
+console.log(numArray);
+console.log(stgArray);
