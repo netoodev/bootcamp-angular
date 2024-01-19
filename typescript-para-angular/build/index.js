@@ -73,4 +73,4 @@ class Character {
     }
 }
 const link = new Character("Zelda", "Link", 85, ["Magic", "Sword Fighting"]);
-link.attack(76, 0);
+link.attack(55, 0);

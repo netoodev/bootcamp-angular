@@ -119,11 +119,19 @@ const walle = new Robô(1, "Wall-E");
 
 // console.log(walle.sayHello());
 
+
 //Classes
+
+/* 
+    DATA MODIFIERS:
+    -public
+    -private
+    -protected
+*/
 
 class Character {
     game:string;
-    name:string;
+    protected name:string;
     strength:number;
     skill:string[];
 
