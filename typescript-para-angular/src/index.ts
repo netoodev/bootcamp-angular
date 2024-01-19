@@ -98,5 +98,23 @@ const bot:robot = {id: 1, name:"Wall-E"};
 interface robot2 { // Mais utilizado para classes
     readonly id:number;
     name:string;
+    sayHello():string;
 }
-const bot2:robot2 = {id: 2, name:"Sprout"};
+
+class Robô implements robot2 {
+    id: number;
+    name: string;
+
+    constructor(id:number, name:string){
+        this.id = id;
+        this.name = name;
+    }
+
+    sayHello(): string {
+        return `${this.name} says hello!`;
+    }
+}
+
+const walle = new Robô(1, "Wall-E");
+
+console.log(walle.sayHello());
