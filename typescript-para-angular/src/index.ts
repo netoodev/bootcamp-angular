@@ -174,5 +174,11 @@ function concatArray<T>(...itens: T[]): T[] {
 const numArray = concatArray<number[]>([1, 5], [3]);
 const stgArray = concatArray<string[]>(["Neto, Percy"], ["Annabeth", "Grover"]);
 
-console.log(numArray);
-console.log(stgArray);
+// console.log(numArray);
+// console.log(stgArray);
+
+
+//Ts Node Dev
+
+let dado:string = "Neto";
+console.log(dado);
