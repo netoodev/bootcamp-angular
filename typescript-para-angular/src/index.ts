@@ -167,12 +167,12 @@ const p2 = new Magician("Ganfold", 56, ["Poisoning Spell", "Master Attack", "Mag
 
 //Generics
 
-function concatArray(...itens: any[]): any[] {
+function concatArray<T>(...itens: T[]): T[] {
     return new Array().concat(...itens);
 }
 
-const numArray = concatArray([1, 5], [3]);
-const stgArray = concatArray(["Neto, Percy"], ["Annabeth", "Grover"])
+const numArray = concatArray<number[]>([1, 5], [3]);
+const stgArray = concatArray<string[]>(["Neto, Percy"], ["Annabeth", "Grover"]);
 
 console.log(numArray);
 console.log(stgArray);
