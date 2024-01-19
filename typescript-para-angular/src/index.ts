@@ -85,3 +85,18 @@ function callToPhone(phone:string | number){
 async function getDatabase(id:number):Promise<string> {
     return "Neto";
 }
+
+//Interfaces (type x interface)
+
+type robot = { // Mais utilizado para tipar variáveis
+    readonly id:number; // readonly faz com que a propriedade só seja lida mas não modificada
+    name:string;
+};
+
+const bot:robot = {id: 1, name:"Wall-E"};
+
+interface robot2 { // Mais utilizado para classes
+    readonly id:number;
+    name:string;
+}
+const bot2:robot2 = {id: 2, name:"Sprout"};
