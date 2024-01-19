@@ -130,13 +130,11 @@ const walle = new Robô(1, "Wall-E");
 */
 
 class Character {
-    game:string;
-    protected name:string;
+    protected readonly name:string;
     strength:number;
     skill:string[];
 
-    constructor(game:string, name:string, strength:number, skill:string[]){
-        this.game = game;
+    constructor(name:string, strength:number, skill:string[]){
         this.name = name;
         this.strength = strength;
         this.skill = skill;
@@ -150,6 +148,18 @@ class Character {
     }
 }
 
-const link = new Character("Zelda", "Link", 85, ["Magic", "Sword Fighting"]);
+//Charactere: superclass
+//Magician: subclasse
 
-link.attack(55, 0);
+class Magician extends Character {
+    magicPoints:number;
+
+    constructor(name:string, strength:number, skill:string[], magicPoints:number) {
+        super(name, strength, skill);
+        this.magicPoints = magicPoints;
+    }
+}
+
+const p1 = new Character("Ozborn", 85, ["Super-Smash", "Club Attack", "Deafening Shout"]);
+
+const p2 = new Magician("Ganfold", 56, ["Poisoning Spell", "Master Attack", "Magic Field"], 100);
