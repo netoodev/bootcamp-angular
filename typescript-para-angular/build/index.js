@@ -59,4 +59,18 @@ class Robô {
     }
 }
 const walle = new Robô(1, "Wall-E");
-console.log(walle.sayHello());
+class Character {
+    constructor(game, name, strength, skill) {
+        this.game = game;
+        this.name = name;
+        this.strength = strength;
+        this.skill = skill;
+    }
+    attack(strenghtSpent, skill) {
+        console.log(`Attack with ${strenghtSpent} points of strenght using ${this.skill[skill]}`);
+        this.strength -= strenghtSpent;
+        console.log(`Your current strength: ${this.strength}`);
+    }
+}
+const link = new Character("Zelda", "Link", 85, ["Magic", "Sword Fighting"]);
+link.attack(76, 0);

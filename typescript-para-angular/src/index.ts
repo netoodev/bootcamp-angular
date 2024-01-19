@@ -117,4 +117,31 @@ class Robô implements robot2 {
 
 const walle = new Robô(1, "Wall-E");
 
-console.log(walle.sayHello());
+// console.log(walle.sayHello());
+
+//Classes
+
+class Character {
+    game:string;
+    name:string;
+    strength:number;
+    skill:string[];
+
+    constructor(game:string, name:string, strength:number, skill:string[]){
+        this.game = game;
+        this.name = name;
+        this.strength = strength;
+        this.skill = skill;
+    }
+
+    attack(strenghtSpent:number, skill:number): void {
+        console.log(`Attack with ${strenghtSpent} points of strenght using ${this.skill[skill]}`);
+        this.strength -= strenghtSpent;
+
+        console.log(`Your current strength: ${this.strength}`);
+    }
+}
+
+const link = new Character("Zelda", "Link", 85, ["Magic", "Sword Fighting"]);
+
+link.attack(55, 0);
