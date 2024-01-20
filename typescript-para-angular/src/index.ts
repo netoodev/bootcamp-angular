@@ -181,4 +181,14 @@ const stgArray = concatArray<string[]>(["Neto, Percy"], ["Annabeth", "Grover"]);
 //Ts Node Dev
 
 let dado:string = "Neto";
-console.log(dado);
+// console.log(dado);
+
+
+//Decorators
+
+function exibirNome(target:any) {
+    console.log(target);
+}
+
+@exibirNome
+class Funcionario {}
