@@ -186,9 +186,22 @@ let dado:string = "Neto";
 
 //Decorators
 
-function exibirNome(target:any) {
-    console.log(target);
+// function exibirNome(target:any) {
+//     console.log(target);
+// }
+
+// @exibirNome
+// class Funcionario {}
+
+function apiVersion(version:string){
+    return (target:any) => {
+        Object.assign(target.prototype, {__version: version})
+    }
 }
 
-@exibirNome
-class Funcionario {}
+@apiVersion("1.10")
+class Api {}
+
+const api = new Api();
+
+console.log(api.__version)
