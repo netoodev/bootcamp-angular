@@ -11,5 +11,11 @@ import {CheckSampleComponent} from './check-sample/check-sample.component'
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
   title = 'life-cycle';
+	isAliveCheckSample:boolean = true;
+
+	disposeCheckSample(): void {
+		this.isAliveCheckSample = false;
+	}
 }

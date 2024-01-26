@@ -1,3 +1,6 @@
 <h1>My Application</h1>
-<app-check-sample></app-check-sample>
+@if(isAliveCheckSample){
+	<app-check-sample></app-check-sample>
+}
+<button (click)="disposeCheckSample()">Destruir</button>
 <router-outlet />
