@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-title',
@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
   templateUrl: './title.component.html',
   styleUrl: './title.component.css'
 })
-export class TitleComponent {
+export class TitleComponent implements OnInit {
 
+	nome:string = 'Neto';
+
+	constructor() {
+
+	}
+
+	ngOnInit(): void {
+		this.nome = `Olá, ${this.nome}`;
+	}
 }
