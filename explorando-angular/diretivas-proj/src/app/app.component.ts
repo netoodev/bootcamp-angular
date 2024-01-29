@@ -11,4 +11,5 @@ import { CardComponent } from './card/card.component';
 })
 export class AppComponent {
   title = 'diretivas-proj';
+  isAliveCard = true;
 }
