@@ -1,6 +1,6 @@
 <h1>My App</h1>
-@if(isAliveCard){
-  <app-card></app-card>
-}
-<button>ola mundo</button>
+<app-card *ngIf="isAliveCard; else anotherBlock"></app-card>
+<ng-template #anotherBlock>
+  <p>Olá, sou um bloco secreto</p>
+</ng-template>
 <router-outlet />
