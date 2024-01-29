@@ -16,6 +16,7 @@ export class CompAtributosComponent implements OnInit{
   corDaFonte:string = "white";
   item:string = "";
   lista:string[] = [];
+  isEnableBlock:boolean = false;
 
   constructor() {
   }
