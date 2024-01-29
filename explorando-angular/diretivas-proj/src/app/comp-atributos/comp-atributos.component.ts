@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common';
 export class CompAtributosComponent implements OnInit{
 
   estilo:string = "enable";
+  corFundo:string = "lightblue";
+  corDaFonte:string = "white";
 
   constructor() {
   }
