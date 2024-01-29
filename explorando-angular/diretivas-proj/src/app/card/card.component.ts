@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
 export class CardComponent implements OnInit {
 
   produtos:string[] = [];
+  menuType:string = "admin";
 
   constructor() {
     this.produtos = [
