@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: 'portfolio',
     component: CardComponent,
-    children: [{path:':id', component: CardComponent}]
+    children: [{path:':id', component: CardComponent}, {path:':id/:token', component: CardComponent}]
   },
   {
     path: '**',
