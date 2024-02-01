@@ -11,7 +11,8 @@ const routes: Routes = [
   },
   {
     path: 'portfolio',
-    component: CardComponent
+    component: CardComponent,
+    children: [{path:':id', component: CardComponent}]
   },
   {
     path: '**',

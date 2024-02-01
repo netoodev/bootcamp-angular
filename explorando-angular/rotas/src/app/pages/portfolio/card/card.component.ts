@@ -8,13 +8,19 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CardComponent implements OnInit {
 
-  constructor(private navegador:Router) {
+  constructor(
+    private activeRoute:ActivatedRoute,
+    ) {
+    this.activeRoute.params.subscribe(
+      res => console.log(res)
+    );
+
+    this.activeRoute.queryParams.subscribe(
+      res => console.log(res)
+    );
   }
 
   ngOnInit(): void {
-    setInterval(() => {
-      this.navegador.navigate(['/'])
-    }, 5000)
   }
-  
+
 }
