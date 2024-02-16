@@ -17,6 +17,13 @@
   background-color: #616161;
   width: 90%;
   height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__body img {
+  width: 100%;
 }
 
 .card__stats {
